@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+:root {
+	--element-size: 6rem;
+	--border-color: #000;
+	--background-color: #fff;
+	--text-color: #000;
+	--junction-color: #D6D6D6;
+	--lumion-color: #FF48FF;
+
+	color: var(--text-color);
+	background-color: var(--background-color);
+
+	font-family: "Roboto Slab", serif;
+    font-size: .7vw; /* Every other unit exists in relation to this one */
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main {
+	position: relative;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-top: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr, .impostor {
+	height: var(--element-size);
+}
+
+td, .impostor {
+	position: relative;
+    min-width: var(--element-size);
+    max-width: var(--element-size);
+}
+
+td:not(.no-border) {
+    border: 1px solid var(--border-color);
+}
+
+.abbreviation > img {
+	/* For using an image in place of letters as an abbreviation */
+	max-width: var(--element-size);
+	max-height: calc(var(--element-size) - 2.75rem);
+	margin-top: .5rem;
+	margin-bottom: -.5rem;
+}
+
+/*td:hover {
+	background: var(--junction-color);
+}*/
+
+.atomic-number {
+    font-size: .92rem;
+    margin-bottom: -.92rem; /* Remove space below line */
+	padding-bottom: 3px;
+}
+
+.abbreviation {
+    text-align: center;
+    font-size: 3rem;
+	margin-bottom: -3px;
+}
+
+.name {
+    text-align: center;
+}
+
+.junction {
+	background: var(--junction-color);
+}
+
+.junction-label {
+	text-align: center;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.inverted, #zalgo-message {
+	color: var(--background-color);
+	background-color: var(--text-color);
+}
+
+#flashing-lights {
+	position: absolute;
+	top: 0; right: 0;
+	cursor: help;
+}
+
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
+#zalgo-message {
+	position: absolute;
+	left: 0; top: 0;
+
+	width: 100vw;
+	height: 100vh;
+
+	font-size: 56pt;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	pointer-events: none;
+	opacity: 0;
+}
+
+
+
+/************** Element specific hacks *****************/
+
+
+#asherite {
+	border: 1px solid var(--border-color);
+	background-color: var(--background-color);
+
+	/* Sloppily overlap elements 57 and 58 */
+	position: absolute;
+	left: -2.5rem; top: -1px; /* I don't know why this minus 1px is necessary but it is */
+
+	width: var(--element-size);
+	height: 100%;
+}
+
+#asherite > .atomic-number {
+	padding-left: 1px; /* ¯\_(ツ)_/¯ */
+}
+
+#somewherum {
+	position: absolute;
+	left: 2rem; top: 0;
+}
+
+#seannerzium > .name {
+	/* Fix for overflowing name */
+	transform: scaleX(0.9) translateX(-.15rem);
+}
+
+#ronaldinhium > .name {
+	transform: scaleX(0.85) translateX(-.4rem);
+}
+
+#templatinum > .name {
+	transform: scaleX(0.9) translateX(-.25rem);
+}
+
+#observium {
+	background-image: url("img/observium.gif");
+	background-size: cover;
+}
+
+
+.anim-pink-glow { /* Lumion */
+	animation: pink-glow 1.5s ease;
+}
+
+.anim-flash { /* Invalid */
+	animation: flash 250ms linear;
+}
+
+@keyframes pink-glow {
+	from {
+		background: var(--lumion-color);
+		box-shadow: 0 0 4rem 2rem var(--lumion-color);
+	}
+	to {
+		background: var(--background-color);
+		box-shadow: none;
+	}
+}
+
+@keyframes flash {
+	from { opacity: 1 }
+	to   { opacity: 0 }
+}

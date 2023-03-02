@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+	--element-size: 6rem;
+	--border-color: #EAECF0;
+	--serif: "Roboto-Slab", serif;
+	--sans-serif: "Roboto", sans-serif;
+
+	font-size: 2.75vh;
+	font-family: var(--sans-serif);
+	vertical-align: baseline;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	margin-bottom: 0;
+	font-weight: normal;
+	font-family: var(--serif);
+}
+
+a {
+	text-decoration: none;
+}
+
+
+caption {
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+
+table.sidebar {
+	/* CSS stolen from Wikipedia */
+	background: #F8F9FA;
+	border: 1px solid var(--border-color);
+	width: 22em;
+	max-width: 30em;
+    font-size: .88rem;
+    line-height: 1.5em;
+}
+
+.flavor-text {
+	text-align: center;
+	font-style: italic;
+	margin-top: .334rem;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+th {
+	text-align: left;
+}
+
+th.table-section {
+	text-align: center;
+	background: #F0FF8F;
+}
+
+th[scope="row"] {
+	width: 50%;
+}
+
+td, th {
+	padding: 7px 10px;
+}
+
+tr:not(:last-child) > td, tr:not(:last-child) > th {
+	border-bottom: 1px solid var(--border-color);
+}
+
+
+.element {
+	margin: .2rem auto;
+	padding: .4rem .4rem .2rem;
+	border: 1px solid #000;
+    width: var(--element-size);
+	height: var(--element-size);
+	font-family: var(--serif);
+}
+
+.atomic-number {
+    font-size: .92rem;
+
+	/* Weird hack that I don't have to do on the main page */
+	margin-bottom: .25rem;
+}
+
+.abbreviation {
+    font-size: 3rem;
+
+	/* Another weird hack that I don't have to do on the main page */
+	height: 3rem;
+	margin-bottom: -.5rem;
+}
+
+.abbreviation, .name {
+    text-align: center;
+}
+
+.abbreviation > img {
+	/* For using an image in place of letters as an abbreviation */
+	max-width: var(--element-size);
+	max-height: calc(var(--element-size) - 2rem);
+	margin-top: -1rem;
+	margin-bottom: 1rem;
+}
+
+.force-wrap {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+.text-like {
+	height: 1em;
+}
+
+.did-you-mean {
+	margin-top: 0;
+}
+
+.error-bar {
+	position: fixed;
+	left: 0; top: 0;
+	background: #ff0000;
+	color: #fff;
+	font-family: "Times New Roman", Times, serif;
+	width: 100vw;
+	margin-top: 0;
+	font-weight: bold;
+}
+
+
+.loading-bar {
+	/* repl.it's loading bar */
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	top: 47%;
+	height: 5px;
+	background-color: transparent;
+	border: 1px solid #000;
+	border-radius: 10px;
+	transition: opacity 0.5s ease;
+	z-index: 1;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.progress {
+	height: 5px;
+	background-color: #000;
+}
+
+.hard-hidden {
+	display: none;
+}
+
+.soft-hidden {
+	pointer-events: none;
+	opacity: 0;
+}
+
+.connected {
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	padding: 1rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+
+	background: #DCEEDE;
+	outline: 4px solid #5EA170;
+	color: #5EA170;
+
+	transition: opacity 1s ease;
+}

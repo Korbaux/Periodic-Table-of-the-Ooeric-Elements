@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Replitic | Periodic Table of the Ooeric Elements</title>
+        <link href="/info.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+		<h1 class="error-bar">This Plugin Crashed!</h1>
+
+        <table class="sidebar">
+            <caption>Replitic, <sub>115</sub>Ri</caption>
+            <tr>
+                <td colspan="2">
+                    <figure class="element">
+                        <div class="atomic-number">115</div>
+                        <div class="abbreviation">Ri</div>
+                        <figcaption class="name">Replitic</figcaption>
+                    </figure>
+                    <div class="flavor-text">A slow-moving, unstable, and unpredictable substance. Digital files are known to become corrupted in its presence.</div>
+                </td>
+            </tr>
+
+            <tr>
+                <th colspan="2" class="table-section">Physical Properties</th>
+            </tr>
+
+            <tr>
+                <th scope="row">Chemical Symbol</th>
+                <td>Ri</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Tinyonic Number</th>
+                <td>115</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Tinyonic Weight</th>
+                <td>8.65 MB</td>
+            </tr>
+
+            <tr>
+                <th scope="row">State at STP</th>
+                <td>Disarray</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Year of Discovery</th>
+                <td>2016</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Discovered By</th>
+                <td>Jadam Dasam, Yaah Deoh, Stańsław Jeroski</td>
+            </tr>
+        </table>
+
+		<div class="loading-bar">
+			<div class="progress"></div>
+		</div>
+
+		<div class="connected soft-hidden">Connected!</div>
+
+		<script>
+			// A piece of catharsis for the frustations I've had with
+			//   using repl.it over the years
+			const table = document.querySelector("table");
+			const loadingBar = document.querySelector(".loading-bar");
+			const progress = document.querySelector(".progress");
+			const connected = document.querySelector(".connected");
+
+			table.setAttribute("style", "");
+			loadingBar.setAttribute("style", "");
+			progress.setAttribute("style", "");
+			connected.setAttribute("style", "");
+
+			function sleep(ms) {
+				return new Promise(resolve => {
+					setTimeout(resolve, ms);
+				});
+			}
+
+			async function load() {
+				let i = 0;
+				do {
+					progress.style.width = `${i}%`;
+					const amount = Math.random() * 25;
+					const delay = (Math.random() * 1900) + 100;
+
+					await sleep(delay);
+					i += amount;
+
+					if (i > 100) {
+						i = 100;
+					}
+				} while (i < 100);
+			}
+
+			function loseConnection() {
+				table.classList.add("hard-hidden");
+				loadingBar.style.opacity = "1";
+			}
+
+			async function reconnect() {
+				await load();
+
+				table.classList.remove("hard-hidden");					
+				loadingBar.style.opacity = "0";
+				connected.classList.remove("soft-hidden");
+
+				setTimeout( () => {
+					connected.classList.add("soft-hidden");
+				}, 1500);
+			}
+
+			(async () => {
+				while (true) {
+					const delay = (Math.random() * 29000) + 1000;
+					await sleep(delay);
+					loseConnection();
+					await reconnect();
+				}
+			})();
+		</script>
+    </body>
+</html>
