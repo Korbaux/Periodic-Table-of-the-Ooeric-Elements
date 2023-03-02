@@ -1,775 +1,780 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
 
-		<meta property="og:title" content="Periodic Table of the Ooeric Elements">
-		<meta property="og:site_name" content="/r/Ooer">
-		<meta itemprop="name"         content="/r/Ooer">
-		<meta name="author" property="og:author" content="/r/Ooer">
-		<meta property="og:description" content="A tabular display of the ooeric elements, arranged by tinyonic number, spiciness, and recurring ooeric properties.">
-		<meta itemprop="description"    content="A tabular display of the ooeric elements, arranged by tinyonic number, spiciness, and recurring ooeric properties.">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
 
-		<meta property="og:image"  content="img/favicon.png">
-		<meta itemprop="image"     content="img/favicon.png">
-		<meta name="twitter:image" content="img/favicon.png">
-		<link rel="apple-touch-icon"  href="img/favicon.png">
-		<link rel="shortcut icon"     href="img/favicon.png">
+  <meta property="og:title" content="Periodic Table of the Ooeric Elements">
+  <meta property="og:site_name" content="/r/Ooer">
+  <meta itemprop="name" content="/r/Ooer">
+  <meta name="author" property="og:author" content="/r/Ooer">
+  <meta property="og:description"
+    content="A tabular display of the ooeric elements, arranged by tinyonic number, spiciness, and recurring ooeric properties.">
+  <meta itemprop="description"
+    content="A tabular display of the ooeric elements, arranged by tinyonic number, spiciness, and recurring ooeric properties.">
 
-		<!-- Google thinks this page is Latin -->
-		<meta name="google" value="notranslate">
+  <meta property="og:image" content="img/favicon.png">
+  <meta itemprop="image" content="img/favicon.png">
+  <meta name="twitter:image" content="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <link rel="shortcut icon" href="img/favicon.png">
 
-		<title>Periodic Table of the Ooeric Elements</title>
-		<link href="main.css" rel="stylesheet" type="text/css">
-		<link href="modal/modal.css" rel="stylesheet" type="text/css">
+  <!-- Google thinks this page is Latin -->
+  <meta name="google" value="notranslate">
 
-		<script src="persistent-config.js"></script>
-		<script src="modal/modal.js"></script>
-		<script src="zalgo.js"></script>
-	</head>
-	<body>
-		<main>
-			<h1>Periodic Table of the Ooeric Elements</h1>
+  <title>Periodic Table of the Ooeric Elements</title>
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <link href="modal/modal.css" rel="stylesheet" type="text/css">
 
-			<label id="flashing-lights"
-			    title="One or more features of this website contain flashing lights; you must check this box to enable them.">
-				Flashing lights are OK
-				<input type="checkbox">
-			</label>
+  <script src="persistent-config.js"></script>
+  <script src="modal/modal.js"></script>
+  <script src="zalgo.js"></script>
+</head>
 
-			<table>
-				<!-- Period 1 -->
-				<tr>
-					<td>
-						<div class="atomic-number">1</div>
-						<div class="abbreviation">A</div>
-						<div class="name">AAAAAAA</div>
-					</td>
-					<td class="no-border blank"></td>
-					<td class="no-border blank" colspan="10"></td>
-					<td class="no-border blank" colspan="5"></td>
-					<td>
-						<div class="atomic-number">2</div>
-						<div class="abbreviation">Om</div>
-						<div class="name">Omanite</div>
-					</td>
-				</tr>
+<body>
+  <main>
+    <h1>Periodic Table of the Ooeric Elements</h1>
 
-				<!-- Period 2 -->
-				<tr>
-					<td>
-						<div class="atomic-number">3</div>
-						<div class="abbreviation">D</div>
-						<div class="name">Darium</div>
-					</td>
-					<td>
-						<div class="atomic-number">4</div>
-						<div class="abbreviation">w</div>
-						<div class="name">wolvium</div>
-					</td>
-					<td class="no-border blank"></td>
-					<td class="no-border">
-						<div id="somewherum">
-							<div class="hidden atomic-number">4.5</div> <!-- Hidden element here for coding consistency -->
-							<div class="abbreviation">Sw</div>
-							<div class="name">Somewherum</div>
-						</div>
-					</td>
-					<td class="no-border blank" colspan="8"></td>
-					<td id="ronaldinhium">
-						<div class="atomic-number">5</div>
-						<div class="abbreviation">R</div>
-						<div class="name">Ronaldinhium</div>
-					</td>
-					<td>
-						<div class="atomic-number">6</div>
-						<div class="abbreviation">C</div>
-						<div class="name">Crimsonium</div>
-					</td>
-					<td>
-						<div class="atomic-number">7</div>
-						<div class="abbreviation">N</div>
-						<div class="name">Nidtrorgen</div>
-					</td>
-					<td>
-						<div class="atomic-number">8</div>
-						<div class="abbreviation">X</div>
-						<div class="name">Xokxygen</div>
-					</td>
-					<td>
-						<div class="atomic-number">9</div>
-						<div class="abbreviation">Kt</div>
-						<div class="name">Piesum</div>
-					</td>
-					<td>
-						<div class="atomic-number">10</div>
-						<div class="abbreviation">B</div>
-						<div class="name">Bottonium</div>
-					</td>
-				</tr>
+    <label id="flashing-lights"
+      title="One or more features of this website contain flashing lights; you must check this box to enable them.">
+      Flashing lights are OK
+      <input type="checkbox">
+    </label>
 
-				<!-- Period 3 -->
-				<tr>
-					<td>
-						<div class="atomic-number">11</div>
-						<div class="abbreviation">Ba</div>
-						<div class="name">Bacon</div>
-					</td>
-					<td>
-						<div class="atomic-number">12</div>
-						<div class="abbreviation">Sc</div>
-						<div class="name">Scunguth</div>
-					</td>
-					<td class="no-border blank" colspan="10"></td>
-					<td>
-						<div class="atomic-number">13</div>
-						<div class="abbreviation">Do</div>
-						<div class="name">Dominum</div>
-					</td>
-					<td>
-						<div class="atomic-number">14</div>
-						<div class="abbreviation">Bo</div>
-						<div class="name">Bobrium</div>
-					</td>
-					<td id="seannerzium">
-						<div class="atomic-number">15</div>
-						<div class="abbreviation">Sz</div>
-						<div class="name">Seannerzium</div>
-					</td>
-					<td id="observium">
-						<div class="inverted atomic-number">16</div>
-						<div class="hidden abbreviation">I</div>
-						<div class="abbreviation">​</div> <!-- Zero width space -->
-						<div class="inverted name">Observium</div>
-					</td>
-					<td>
-						<div class="atomic-number">17</div>
-						<div class="abbreviation">Go</div>
-						<div class="name">Googlium</div>
-					</td>
-					<td>
-						<div class="atomic-number">18</div>
-						<div class="abbreviation">Oe</div>
-						<div class="name">Ooergon</div>
-					</td>
-				</tr>
-					
-				<!-- Period 4 -->
-				<tr>
-					<td>
-						<div class="atomic-number">19</div>
-						<div class="abbreviation">M</div>
-						<div class="name">Mothium</div>
-					</td>
-					<td>
-						<div class="atomic-number">20</div>
-						<div class="abbreviation">Bp</div>
-						<div class="name">Bepium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
-						<div class="atomic-number">21</div>
-						<div class="abbreviation"></div>
-						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+    <table>
+      <!-- Period 1 -->
+      <tr>
+        <td>
+          <div class="atomic-number">1</div>
+          <div class="abbreviation">A</div>
+          <div class="name">AAAAAAA</div>
+        </td>
+        <td class="no-border blank"></td>
+        <td class="no-border blank" colspan="10"></td>
+        <td class="no-border blank" colspan="5"></td>
+        <td>
+          <div class="atomic-number">2</div>
+          <div class="abbreviation">Om</div>
+          <div class="name">Omanite</div>
+        </td>
+      </tr>
+
+      <!-- Period 2 -->
+      <tr>
+        <td>
+          <div class="atomic-number">3</div>
+          <div class="abbreviation">D</div>
+          <div class="name">Darium</div>
+        </td>
+        <td>
+          <div class="atomic-number">4</div>
+          <div class="abbreviation">w</div>
+          <div class="name">wolvium</div>
+        </td>
+        <td class="no-border blank"></td>
+        <td class="no-border">
+          <div id="somewherum">
+            <div class="hidden atomic-number">4.5</div> <!-- Hidden element here for coding consistency -->
+            <div class="abbreviation">Sw</div>
+            <div class="name">Somewherum</div>
+          </div>
+        </td>
+        <td class="no-border blank" colspan="8"></td>
+        <td id="ronaldinhium">
+          <div class="atomic-number">5</div>
+          <div class="abbreviation">R</div>
+          <div class="name">Ronaldinhium</div>
+        </td>
+        <td>
+          <div class="atomic-number">6</div>
+          <div class="abbreviation">C</div>
+          <div class="name">Crimsonium</div>
+        </td>
+        <td>
+          <div class="atomic-number">7</div>
+          <div class="abbreviation">N</div>
+          <div class="name">Nidtrorgen</div>
+        </td>
+        <td>
+          <div class="atomic-number">8</div>
+          <div class="abbreviation">X</div>
+          <div class="name">Xokxygen</div>
+        </td>
+        <td>
+          <div class="atomic-number">9</div>
+          <div class="abbreviation">Kt</div>
+          <div class="name">Piesum</div>
+        </td>
+        <td>
+          <div class="atomic-number">10</div>
+          <div class="abbreviation">B</div>
+          <div class="name">Bottonium</div>
+        </td>
+      </tr>
+
+      <!-- Period 3 -->
+      <tr>
+        <td>
+          <div class="atomic-number">11</div>
+          <div class="abbreviation">Ba</div>
+          <div class="name">Bacon</div>
+        </td>
+        <td>
+          <div class="atomic-number">12</div>
+          <div class="abbreviation">Sc</div>
+          <div class="name">Scunguth</div>
+        </td>
+        <td class="no-border blank" colspan="10"></td>
+        <td>
+          <div class="atomic-number">13</div>
+          <div class="abbreviation">Do</div>
+          <div class="name">Dominum</div>
+        </td>
+        <td>
+          <div class="atomic-number">14</div>
+          <div class="abbreviation">Bo</div>
+          <div class="name">Bobrium</div>
+        </td>
+        <td id="seannerzium">
+          <div class="atomic-number">15</div>
+          <div class="abbreviation">Sz</div>
+          <div class="name">Seannerzium</div>
+        </td>
+        <td id="observium">
+          <div class="inverted atomic-number">16</div>
+          <div class="hidden abbreviation">I</div>
+          <div class="abbreviation">​</div> <!-- Zero width space -->
+          <div class="inverted name">Observium</div>
+        </td>
+        <td>
+          <div class="atomic-number">17</div>
+          <div class="abbreviation">Go</div>
+          <div class="name">Googlium</div>
+        </td>
+        <td>
+          <div class="atomic-number">18</div>
+          <div class="abbreviation">Oe</div>
+          <div class="name">Ooergon</div>
+        </td>
+      </tr>
+
+      <!-- Period 4 -->
+      <tr>
+        <td>
+          <div class="atomic-number">19</div>
+          <div class="abbreviation">M</div>
+          <div class="name">Mothium</div>
+        </td>
+        <td>
+          <div class="atomic-number">20</div>
+          <div class="abbreviation">Bp</div>
+          <div class="name">Bepium</div>
+        </td>
+        <td class="blank">
+          <div class="atomic-number">21</div>
+          <div class="abbreviation">Kb</div>
+          <div class="name">Korbium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">22</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">23</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">24</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">25</div>
-						<div class="abbreviation">S</div>
-						<div class="name">Snekium</div-->
-					</td>
-					<td>
-						<div class="atomic-number">26</div>
-						<div class="abbreviation">Du</div>
-						<div class="name">Duplicatium</div>
-					</td>
-					<td>
-						<div class="atomic-number">26</div>
-						<div class="abbreviation">Du</div>
-						<div class="hidden name">DupIicatium</div> <!-- Lowerase L -> Uppercase I to separate them to different pages -->
-						<div class="name">Duplicatium</div>
-					</td>
-					<td>
-						<div class="atomic-number">28</div>
-						<div class="abbreviation">Tbh</div>
-						<div class="name">Frogium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">25</div>
+          <div class="abbreviation">S</div>
+          <div class="name">Snekium</div-->
+        </td>
+        <td>
+          <div class="atomic-number">26</div>
+          <div class="abbreviation">Du</div>
+          <div class="name">Duplicatium</div>
+        </td>
+        <td>
+          <div class="atomic-number">26</div>
+          <div class="abbreviation">Du</div>
+          <div class="hidden name">DupIicatium</div>
+          <!-- Lowercase L -> Uppercase I to separate them to different pages -->
+          <div class="name">Duplicatium</div>
+        </td>
+        <td>
+          <div class="atomic-number">28</div>
+          <div class="abbreviation">Tbh</div>
+          <div class="name">Frogium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">29</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">30</div>
-						<div class="hidden abbreviation">Woo</div>
-						<div class="abbreviation"><img src="img/ohyeahwooyeah.gif"></div>
-						<div class="name">Groovium</div>
-					</td>
-					<td class="blank">
-						<div class="atomic-number">31</div>
-						<div class="abbreviation">V</div>
-						<div class="name">Vitasium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">30</div>
+          <div class="hidden abbreviation">Woo</div>
+          <div class="abbreviation"><img src="img/ohyeahwooyeah.gif"></div>
+          <div class="name">Groovium</div>
+        </td>
+        <td class="blank">
+          <div class="atomic-number">31</div>
+          <div class="abbreviation">V</div>
+          <div class="name">Vitasium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">32</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">33</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">34</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">35</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">36</div>
-						<div class="abbreviation">Pn</div>
-						<div class="name">Pingon</div>
-					</td>
-					<td class="no-border">
-						<img src="img/ooerium.png" class="impostor" style="margin-bottom: -5px">
-						<div class="hidden atomic-number">36.5</div> <!-- Hidden elements for coding consistency -->
-						<div class="hidden abbreviation">Oo</div>
-						<div class="hidden name">Ooerium</div>
-					</td>
-				</tr>
+        </td>
+        <td>
+          <div class="atomic-number">36</div>
+          <div class="abbreviation">Pn</div>
+          <div class="name">Pingon</div>
+        </td>
+        <td class="no-border">
+          <img src="img/ooerium.png" class="impostor" style="margin-bottom: -5px">
+          <div class="hidden atomic-number">36.5</div> <!-- Hidden elements for coding consistency -->
+          <div class="hidden abbreviation">Oo</div>
+          <div class="hidden name">Ooerium</div>
+        </td>
+      </tr>
 
-				<!-- Period 5 -->
-				<tr>
-					<td class="blank">
-						<!-- Your element here!
+      <!-- Period 5 -->
+      <tr>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">37</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">38</div>
-						<div class="abbreviation">Br</div>
-						<div class="name">Brandbilum</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">38</div>
+          <div class="abbreviation">Br</div>
+          <div class="name">Brandbilum</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">39</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">40</div>
-						<div class="abbreviation">Ji</div>
-						<div class="name">Joanium</div>
-					</td>
-					<td>
-						<div class="atomic-number">41</div>
-						<div class="abbreviation">Ja</div>
-						<div class="name">Jaurisium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">40</div>
+          <div class="abbreviation">Ji</div>
+          <div class="name">Joanium</div>
+        </td>
+        <td>
+          <div class="atomic-number">41</div>
+          <div class="abbreviation">Ja</div>
+          <div class="name">Jaurisium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">42</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">43</div>
-						<div class="abbreviation">Al</div>
-						<div class="name">Alloy</div>
-					</td>
-					<td>
-						
-						<div class="atomic-number">44</div>
-						<div class="abbreviation">Ma</div>
-						<div class="name">Material</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">43</div>
+          <div class="abbreviation">Al</div>
+          <div class="name">Alloy</div>
+        </td>
+        <td>
+
+          <div class="atomic-number">44</div>
+          <div class="abbreviation">Ma</div>
+          <div class="name">Material</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">45</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">46</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">47</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">48</div>
-						<div class="abbreviation">Lm</div>
-						<div class="name">Lemon</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">48</div>
+          <div class="abbreviation">Lm</div>
+          <div class="name">Lemon</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">49</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">50</div>
-						<div class="abbreviation">Me</div>
-						<div class="name">Merkellium</div>
-					</td>
-					<td>
-						<div class="atomic-number">51</div>
-						<div class="abbreviation">Wo</div>
-						<div class="name">Wollonium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">50</div>
+          <div class="abbreviation">Me</div>
+          <div class="name">Merkellium</div>
+        </td>
+        <td>
+          <div class="atomic-number">51</div>
+          <div class="abbreviation">Wo</div>
+          <div class="name">Wollonium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">52</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">53</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td id="lumion" class="clickable">
-						<div class="atomic-number">54</div>
-						<div class="abbreviation">Lu</div>
-						<div class="name">Lumion</div>
-					</td>
-				</tr>
+        </td>
+        <td id="lumion" class="clickable">
+          <div class="atomic-number">54</div>
+          <div class="abbreviation">Lu</div>
+          <div class="name">Lumion</div>
+        </td>
+      </tr>
 
-				<!-- Period 6 -->
-				<tr>
-					<td>
-						<div class="atomic-number">55</div>
-						<div class="abbreviation"><del>.:|:;</del></div>
-						<div class="name">Lossium</div>
-					</td>
-					<td>
-						<div class="atomic-number">56</div>
-						<div class="abbreviation">d</div>
-						<div class="name">Barium</div>
-					</td>
-					<td class="junction">
-						<div class="junction-label">57—71</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+      <!-- Period 6 -->
+      <tr>
+        <td>
+          <div class="atomic-number">55</div>
+          <div class="abbreviation"><del>.:|:;</del></div>
+          <div class="name">Lossium</div>
+        </td>
+        <td>
+          <div class="atomic-number">56</div>
+          <div class="abbreviation">d</div>
+          <div class="name">Barium</div>
+        </td>
+        <td class="junction">
+          <div class="junction-label">57—71</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">72</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">73</div>
-						<div class="abbreviation">Dl</div>
-						<div class="name">Delphium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">73</div>
+          <div class="abbreviation">Dl</div>
+          <div class="name">Delphium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">74</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">75</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">76</div>
-						<div class="abbreviation">Sy</div>
-						<div class="name">Synium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">76</div>
+          <div class="abbreviation">Sy</div>
+          <div class="name">Synium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">77</div>
 						<div class="abbreviation">Üb</div>
 						<div class="name">Überium</div-->
-					</td>
-					<td id="templatinum">
-						<div class="atomic-number">78</div>
-						<div class="abbreviation">[&nbsp;&nbsp;]</div>
-						<div class="name">Templatinum</div>
-					</td>
-					<td>
-						<div class="atomic-number">79</div>
-						<div class="abbreviation">Gr</div>
-						<div class="name">Groold</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td id="templatinum">
+          <div class="atomic-number">78</div>
+          <div class="abbreviation">[&nbsp;&nbsp;]</div>
+          <div class="name">Templatinum</div>
+        </td>
+        <td>
+          <div class="atomic-number">79</div>
+          <div class="abbreviation">Gr</div>
+          <div class="name">Groold</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">80</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">81</div>
-						<div class="abbreviation">Do</div>
-						<div class="name">Dongor</div>
-					</td>
-					<td>
-						<div class="atomic-number">82</div>
-						<div class="abbreviation">Nd</div>
-						<div class="name">NoDongium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">81</div>
+          <div class="abbreviation">Do</div>
+          <div class="name">Dongor</div>
+        </td>
+        <td>
+          <div class="atomic-number">82</div>
+          <div class="abbreviation">Nd</div>
+          <div class="name">NoDongium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">83</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">84</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">85</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">86</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-				</tr>
+        </td>
+      </tr>
 
-				<!-- Period 7 -->
-				<tr>
-					<td>
-						<div class="atomic-number">87</div>
-						<div class="abbreviation"><img src="img/rat.png"></div>
-						<div class="name">Rat</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+      <!-- Period 7 -->
+      <tr>
+        <td>
+          <div class="atomic-number">87</div>
+          <div class="abbreviation"><img src="img/rat.png"></div>
+          <div class="name">Rat</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">88</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="junction">
-						<div class="junction-label">89—103</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="junction">
+          <div class="junction-label">89—103</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">104</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">105</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">106</div>
-						<div class="abbreviation">The</div>
-						<div class="name">The</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">106</div>
+          <div class="abbreviation">The</div>
+          <div class="name">The</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">107</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">108</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">109</div>
-						<div class="abbreviation">Fr</div>
-						<div class="name">Freakium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">109</div>
+          <div class="abbreviation">Fr</div>
+          <div class="name">Freakium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">110</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">111</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">112</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">113</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">114</div>
-						<div class="abbreviation">Oop</div>
-						<div class="name">Mistakine</div-->
-					</td>
-					<td>
-						<div class="atomic-number">115</div>
-						<div class="abbreviation">Ri</div>
-						<div class="name">Replitic</div>
-					</td>
-					<td>
-						<div class="atomic-number">116</div>
-						<div class="abbreviation">Err</div>
-						<div class="name">Erronium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">114</div>
+          <div class="abbreviation">Oop</div>
+          <div class="name">Mistakine</div-->
+        </td>
+        <td>
+          <div class="atomic-number">115</div>
+          <div class="abbreviation">Ri</div>
+          <div class="name">Replitic</div>
+        </td>
+        <td>
+          <div class="atomic-number">116</div>
+          <div class="abbreviation">Err</div>
+          <div class="name">Erronium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">117</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">118</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-				</tr>
+        </td>
+      </tr>
 
-				<!-- This row intentionally left blank -->
-				<tr>
-					<td class="no-border blank"></td>
-				</tr>
+      <!-- This row intentionally left blank -->
+      <tr>
+        <td class="no-border blank"></td>
+      </tr>
 
-				<!-- Lanthanides -->
-				<tr>
-					<td class="no-border blank" colspan="2"></td>
-					<td>
-						<div class="atomic-number">57</div>
-						<div class="abbreviation">¿</div>
-						<div class="name">¿¿¿¿¿¿¿</div>
-					</td>
-					<td>
-						<div class="atomic-number">58</div>
-						<div class="abbreviation">?</div>
-						<div class="name">???????</div>
-						<div id="asherite">
-							<div class="atomic-number">57 5/8</div>
-							<div class="abbreviation">As</div>
-							<div class="name">Asherite</div>
-						</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+      <!-- Lanthanides -->
+      <tr>
+        <td class="no-border blank" colspan="2"></td>
+        <td>
+          <div class="atomic-number">57</div>
+          <div class="abbreviation">¿</div>
+          <div class="name">¿¿¿¿¿¿¿</div>
+        </td>
+        <td>
+          <div class="atomic-number">58</div>
+          <div class="abbreviation">?</div>
+          <div class="name">???????</div>
+          <div id="asherite">
+            <div class="atomic-number">57 5/8</div>
+            <div class="abbreviation">As</div>
+            <div class="name">Asherite</div>
+          </div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">59</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">60</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">61</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td id="invalid" class="clickable">
-						<div class="hidden atomic-number">62</div> <!-- Another hack to make the hack in make-table-epic.js work -->
-						<div class="atomic-number">NaN</div>
-						<div class="abbreviation">--</div>
-						<div class="name">Invalid</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td id="invalid" class="clickable">
+          <div class="hidden atomic-number">62</div> <!-- Another hack to make the hack in make-table-epic.js work -->
+          <div class="atomic-number">NaN</div>
+          <div class="abbreviation">--</div>
+          <div class="name">Invalid</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">63</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">64</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">65</div>
-						<div class="abbreviation">Wr</div>
-						<div class="name">Worwium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">65</div>
+          <div class="abbreviation">Wr</div>
+          <div class="name">Worwium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">66</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">67</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">68</div>
-						<div class="abbreviation">ᵬ</div>
-						<div class="name">Brimgus</div>
-					</td>
-					<td>
-						
-						<div class="atomic-number">69</div> <!-- Nice -->
-						<div class="abbreviation">Ha</div>
-						<div class="name">Funnium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">68</div>
+          <div class="abbreviation">ᵬ</div>
+          <div class="name">Brimgus</div>
+        </td>
+        <td>
+
+          <div class="atomic-number">69</div> <!-- Nice -->
+          <div class="abbreviation">Ha</div>
+          <div class="name">Funnium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">70</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">71</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-				</tr>
+        </td>
+      </tr>
 
-				<!-- Actinides -->
-				<tr>
-					<td class="no-border blank" colspan="2"></td>
-					<td class="blank">
-						<!-- Your element here!
+      <!-- Actinides -->
+      <tr>
+        <td class="no-border blank" colspan="2"></td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">89</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">90</div>
-						<div class="abbreviation">Sn</div>
-						<div class="name">Snailium</div>
-					</td>
-					<td>
-						<div class="atomic-number">91</div>
-						<div class="abbreviation">G</div>
-						<div class="name">Garlic</div>
-					</td>
-					<td>
-						<div class="atomic-number">92</div>
-						<div class="abbreviation">U</div>
-						<div class="name">You</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">90</div>
+          <div class="abbreviation">Sn</div>
+          <div class="name">Snailium</div>
+        </td>
+        <td>
+          <div class="atomic-number">91</div>
+          <div class="abbreviation">G</div>
+          <div class="name">Garlic</div>
+        </td>
+        <td>
+          <div class="atomic-number">92</div>
+          <div class="abbreviation">U</div>
+          <div class="name">You</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">93</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">94</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">95</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">96</div>
-						<div class="abbreviation">L</div>
-						<div class="name">Letterium</div>
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td>
+          <div class="atomic-number">96</div>
+          <div class="abbreviation">L</div>
+          <div class="name">Letterium</div>
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">97</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">98</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">99</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">100</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">101</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td class="blank">
-						<!-- Your element here!
+        </td>
+        <td class="blank">
+          <!-- Your element here!
 						<div class="atomic-number">102</div>
 						<div class="abbreviation"></div>
 						<div class="name"></div-->
-					</td>
-					<td>
-						<div class="atomic-number">103</div>
-						<div class="abbreviation">Oh</div>
-						<div class="name">Oh no</div>
-					</td>
-				</tr>
+        </td>
+        <td>
+          <div class="atomic-number">103</div>
+          <div class="abbreviation">Oh</div>
+          <div class="name">Oh no</div>
+        </td>
+      </tr>
 
-			</table>
-		</main>
+    </table>
+  </main>
 
-		<div id="zalgo-message">YOU CANNOT ESCAPE THE INEVITABLE</div>
+  <div id="zalgo-message">YOU CANNOT ESCAPE THE INEVITABLE</div>
 
-		<script src="make-table-epic.js"></script>
-	</body>
+  <script src="make-table-epic.js"></script>
+</body>
+
 </html>
